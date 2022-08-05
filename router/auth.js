@@ -5,9 +5,9 @@ const authenticate=require("../middleware/authenticate");
 const cookieParser = require("cookie-parser");
 const router=express.Router();
 require("../db/conn");
-router.get('/' ,(req,res)=>{
-      res.send("page is router .js");
-});
+// router.get('/' ,(req,res)=>{
+//       res.send("page is router .js");
+// });
 router.use(cookieParser());
 // by promises
 // router.post('/register',(req,res)=>{
